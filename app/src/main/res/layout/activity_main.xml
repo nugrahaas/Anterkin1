@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_margin="20dp"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_hitam"
+            />
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:background="#ffffff"
+                android:scaleType="centerInside"
+                android:id="@+id/gomart_id"
+                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:padding="10dp"
+                android:onClick="shop"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/menu_gomart"
+                />
+            <ImageButton
+                android:background="#ffffff"
+                android:scaleType="centerInside"
+                android:id="@+id/goride_id"
+                android:onClick="ride"
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/menu_goride"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:background="#ffffff"
+                android:scaleType="centerInside"
+                android:id="@+id/gofood_id"
+                android:layout_width="120dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/menu_gofood"
+                android:onClick="food"
+                />
+            <ImageButton
+                android:background="#ffffff"
+                android:scaleType="centerInside"
+                android:id="@+id/gobox_id"
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/menu_gosend"
+                android:onClick="box"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Copyright @nugrahaatyo"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
